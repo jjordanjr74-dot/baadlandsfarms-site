@@ -1,0 +1,79 @@
+{
+  "$schema": "https://raw.githubusercontent.com/nousresearch/webmcp/main/schema/tools.json",
+  "name": "baadlands-farms",
+  "description": "Baadlands Farms \u2014 targeted goat grazing, farm-direct meat shares, eggs, and agritourism in Pueblo, Colorado.",
+  "version": "1.0.0",
+  "tools": [
+    {
+      "name": "get_grazing_quote",
+      "description": "Get an estimated grazing quote based on acreage and vegetation density.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "acres": {
+            "type": "number"
+          },
+          "density": {
+            "type": "string",
+            "enum": [
+              "light",
+              "medium",
+              "heavy"
+            ]
+          }
+        },
+        "required": [
+          "acres",
+          "density"
+        ]
+      },
+      "endpoint": "/api/grazing-quote"
+    },
+    {
+      "name": "check_meat_shares",
+      "description": "Check availability for goat, pork, or poultry meat shares.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "goat",
+              "pork",
+              "poultry"
+            ]
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "endpoint": "/api/meat-shares"
+    },
+    {
+      "name": "book_farm_event",
+      "description": "Book a mobile petting zoo or goat yoga event.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "event_type": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "guests": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "event_type",
+          "date",
+          "guests"
+        ]
+      },
+      "endpoint": "/api/book-event"
+    }
+  ]
+}
