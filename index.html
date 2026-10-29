@@ -13,6 +13,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Baadlands Farms">
 <meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://baadlandsfarms.com/assets/photos/goat_herd_vista.jpg">
 <link rel="canonical" href="https://baadlandsfarms.com/">
 <link rel="modelcontext" href="/api/tools.json">
 <link rel="icon" href="/favicon.ico">
@@ -112,7 +113,50 @@ footer{background:var(--primary);color:#e9e4d1;padding:2.6rem 0 2rem;margin-top:
 .foot-grid a,.foot-grid p{display:block;color:#d6d1bc;font-size:.9rem;margin-bottom:.45rem}
 .foot-grid a:hover{color:var(--accent)}
 .foot-bottom{border-top:1px solid rgba(255,255,255,.2);padding-top:1.4rem;text-align:center;font-size:.82rem;color:#c9c4b0}
-@media(max-width:900px){.hero h1{font-size:2.4rem}.nav-links{display:none}}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:2.6rem;align-items:center}
+.hero-showcase{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:.85rem}
+.hero-card{border-radius:10px;overflow:hidden;border:2px solid rgba(255,255,255,.22);box-shadow:0 16px 38px rgba(0,0,0,.38);position:relative;background:#1a2b0d}
+.hero-card.main{grid-column:1 / -1;aspect-ratio:16/10}
+.hero-card.sub{aspect-ratio:4/3}
+.hero-card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}
+.hero-card:hover img{transform:scale(1.04)}
+.hero-cap{position:absolute;left:10px;bottom:10px;background:rgba(20,34,10,.86);backdrop-filter:blur(6px);color:#f6e7cf;padding:.28rem .7rem;border-radius:999px;font-size:.73rem;font-weight:700;letter-spacing:.6px;text-transform:uppercase;border:1px solid rgba(212,163,115,.45)}
+.about-split{display:grid;grid-template-columns:1.05fr .95fr;gap:2.6rem;align-items:center;max-width:1100px;margin:0 auto}
+.about-mosaic{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+.about-mosaic figure{margin:0;border-radius:10px;overflow:hidden;box-shadow:0 10px 26px rgba(35,45,20,.12);border:1px solid var(--line);background:var(--white)}
+.about-mosaic figure.wide{grid-column:1 / -1}
+.about-mosaic img{width:100%;height:210px;object-fit:cover;display:block}
+.about-mosaic figure.wide img{height:240px}
+.about-mosaic figcaption{padding:.55rem .85rem;font-size:.8rem;font-weight:700;color:var(--primary);background:var(--white);display:flex;justify-content:space-between;align-items:center}
+.about-mosaic figcaption span{color:var(--secondary);font-size:.74rem;text-transform:uppercase;letter-spacing:.8px}
+.stream-thumb{margin:-1.9rem -1.7rem 1.25rem;height:195px;overflow:hidden;border-radius:4px 4px 0 0;position:relative;background:#233614}
+.stream-thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}
+.stream-card:hover .stream-thumb img{transform:scale(1.05)}
+.stream-thumb .pill{position:absolute;top:12px;right:12px;background:rgba(26,43,13,.88);color:var(--accent);padding:.25rem .65rem;border-radius:999px;font-size:.72rem;font-weight:800;letter-spacing:.8px;text-transform:uppercase}
+.gallery-filters{display:flex;flex-wrap:wrap;gap:.55rem;justify-content:center;margin-bottom:2rem}
+.filter-btn{background:var(--white);border:1.5px solid var(--line);color:var(--primary);padding:.55rem 1.15rem;border-radius:999px;font-weight:800;font-size:.84rem;letter-spacing:.6px;text-transform:uppercase;cursor:pointer;transition:all .18s;font-family:inherit}
+.filter-btn:hover,.filter-btn.active{background:var(--primary);color:var(--white);border-color:var(--primary);box-shadow:0 4px 14px rgba(45,80,22,.22)}
+.herd-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(265px,1fr));gap:1.35rem}
+.herd-card{background:var(--white);border-radius:10px;overflow:hidden;border:1px solid var(--line);box-shadow:0 8px 24px rgba(35,45,20,.08);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s;cursor:pointer}
+.herd-card:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(35,45,20,.15)}
+.herd-card[hidden]{display:none!important}
+.herd-media{position:relative;aspect-ratio:4/3;overflow:hidden;background:#1e3011}
+.herd-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
+.herd-card:hover .herd-media img{transform:scale(1.06)}
+.herd-tag{position:absolute;top:11px;left:11px;background:rgba(45,80,22,.9);color:#fff;font-size:.7rem;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:.26rem .68rem;border-radius:999px}
+.herd-body{padding:1.05rem 1.15rem 1.15rem;display:flex;flex-direction:column;flex:1}
+.herd-body h3{font-size:1.06rem;color:var(--primary);margin-bottom:.3rem;line-height:1.3}
+.herd-body p{font-size:.88rem;color:#4a5340;line-height:1.5;margin-bottom:.65rem;flex:1}
+.herd-meta{font-size:.76rem;font-weight:800;color:var(--secondary);text-transform:uppercase;letter-spacing:.7px;border-top:1px solid var(--line);padding-top:.55rem;display:flex;justify-content:space-between}
+.lightbox{position:fixed;inset:0;background:rgba(12,18,8,.92);z-index:2000;display:none;align-items:center;justify-content:center;padding:1.5rem}
+.lightbox.open{display:flex}
+.lightbox-inner{max-width:960px;width:100%;background:var(--white);border-radius:12px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,.55);position:relative}
+.lightbox-inner img{width:100%;max-height:72vh;object-fit:contain;background:#111a0a;display:block}
+.lightbox-bar{padding:1rem 1.4rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;background:var(--white)}
+.lightbox-bar h4{color:var(--primary);font-size:1.1rem}
+.lightbox-bar p{color:#4a5340;font-size:.88rem}
+.lightbox-close{background:var(--primary);color:#fff;border:none;border-radius:6px;padding:.5rem 1rem;font-weight:800;cursor:pointer;font-family:inherit}
+@media(max-width:900px){.hero h1{font-size:2.4rem}.nav-links{display:none}.hero-grid,.about-split{grid-template-columns:1fr}}
 @media(max-width:640px){.hero h1{font-size:1.95rem}.calc-grid{grid-template-columns:1fr}.calc-body{padding:1.5rem}.calc-foot{padding:1.2rem 1.5rem}section{padding:3rem 0}}
 </style>
 </head>
@@ -123,6 +167,7 @@ footer{background:var(--primary);color:#e9e4d1;padding:2.6rem 0 2rem;margin-top:
     <div class="logo">Baadlands <span>Farms</span></div>
     <nav class="nav-links" aria-label="Primary">
       <a href="#services">Services</a>
+      <a href="#herd">Meet the Herd</a>
       <a href="#calculator">Grazing Estimator</a>
       <a href="#map">Service Area</a>
       <a href="#faq">FAQ</a>
@@ -132,19 +177,44 @@ footer{background:var(--primary);color:#e9e4d1;padding:2.6rem 0 2rem;margin-top:
 </header>
 
 <div class="hero">
-  <div class="container">
-    <span class="eyebrow">Pueblo, Colorado &middot; 120-Mile Service Radius</span>
-    <h1>Targeted goat grazing that <em>removes wildfire fuel</em> — without herbicides or machinery.</h1>
-    <p class="lede">Baadlands Farms deploys a 50-plus head herd to clear scrub oak, cheatgrass and Russian thistle on acreage, HOA common land, solar arrays and drainage districts. Plus custom-exempt meat shares, rainbow eggs and farm events.</p>
-    <div class="hero-actions">
-      <a href="#calculator" class="btn btn-primary">Calculate My Grazing Quote</a>
-      <a href="#contact" class="btn btn-ghost">Book a Site Visit</a>
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Pueblo, Colorado &middot; 120-Mile Service Radius</span>
+      <h1>Targeted goat grazing that <em>removes wildfire fuel</em> — without herbicides or machinery.</h1>
+      <p class="lede">Baadlands Farms deploys a 50-plus head herd to clear scrub oak, cheatgrass and Russian thistle on acreage, HOA common land, solar arrays and drainage districts. Plus custom-exempt meat shares, rainbow eggs and farm events.</p>
+      <div class="hero-actions">
+        <a href="#calculator" class="btn btn-primary">Calculate My Grazing Quote</a>
+        <a href="#herd" class="btn btn-ghost">Meet Our Animals</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>50+</b><span>Head of Goats</span></div>
+        <div><b>120 mi</b><span>Service Radius</span></div>
+        <div><b>$800–$1,500</b><span>Per Acre</span></div>
+        <div><b>0</b><span>Herbicides Used</span></div>
+      </div>
     </div>
-    <div class="hero-stats">
-      <div><b>50+</b><span>Head of Goats</span></div>
-      <div><b>120 mi</b><span>Service Radius</span></div>
-      <div><b>$800–$1,500</b><span>Per Acre</span></div>
-      <div><b>0</b><span>Herbicides Used</span></div>
+    <div class="hero-showcase" aria-label="Baadlands Farms live herd photography">
+      <div class="hero-card main">
+        <picture>
+          <source srcset="/assets/photos/goat_herd_vista.webp" type="image/webp">
+          <img src="/assets/photos/goat_herd_vista.jpg" alt="Baadlands Farms 50+ head goat herd deployed in Pueblo, Colorado" width="1200" height="900" fetchpriority="high">
+        </picture>
+        <span class="hero-cap">50+ Head Working Herd &middot; Pueblo, CO</span>
+      </div>
+      <div class="hero-card sub">
+        <picture>
+          <source srcset="/assets/photos/goat_buck_hero.webp" type="image/webp">
+          <img src="/assets/photos/goat_buck_hero.jpg" alt="Senior breeding buck on dry pasture at Baadlands Farms" width="1200" height="900">
+        </picture>
+        <span class="hero-cap">Breeding Bucks &amp; Does</span>
+      </div>
+      <div class="hero-card sub">
+        <picture>
+          <source srcset="/assets/photos/heritage_turkeys_ducks.webp" type="image/webp">
+          <img src="/assets/photos/heritage_turkeys_ducks.jpg" alt="Heritage turkeys, ducks and geese at Baadlands Farms" width="1200" height="900">
+        </picture>
+        <span class="hero-cap">Ducks, Geese &amp; Turkeys</span>
+      </div>
     </div>
   </div>
 </div>
@@ -158,9 +228,38 @@ footer{background:var(--primary);color:#e9e4d1;padding:2.6rem 0 2rem;margin-top:
       <h2>Safety discipline meets regenerative agriculture</h2>
       <p>Baadlands Farms is owned and operated by Stacey, a 37-year-old Amazon Safety Specialist and farm operator in Pueblo. That same rigor — hazard assessment, documented procedure, liability control — is applied to every grazing job and every product we sell.</p>
     </div>
-    <div style="max-width:860px;margin:0 auto;color:#414a37">
-      <p>Our livestock includes 50-plus goats (breeding bucks, does, wethers and kids), a herd of pigs, ducks, geese, laying chickens, prized roosters, turkeys and guinea fowl. We raise them on open pasture in Southern Colorado and sell direct — no middlemen, no retail markup, no mystery supply chain.</p>
-      <p style="margin-top:1rem">Grazing crews are moved under portable solar electric netting and every sexually intact or adult goat leaving the premises carries an official USDA Scrapie Flock ID ear tag as required by 9 CFR Part 79. We carry a $1M/$2M commercial general liability policy with an off-premises contract grazing endorsement.</p>
+    <div class="about-split">
+      <div style="color:#414a37">
+        <p>Our livestock includes 50-plus goats (breeding bucks, does, wethers and kids), a herd of pasture pigs, Muscovy and Pekin ducks, geese, laying chickens, prized roosters, heritage turkeys and guinea fowl. We raise them on open pasture in Southern Colorado and sell direct — no middlemen, no retail markup, no mystery supply chain.</p>
+        <p style="margin-top:1rem">Grazing crews are moved under portable solar electric netting and every sexually intact or adult goat leaving the premises carries an official USDA Scrapie Flock ID ear tag as required by 9 CFR Part 79. We carry a $1M/$2M commercial general liability policy with an off-premises contract grazing endorsement.</p>
+        <div style="margin-top:1.5rem;display:flex;gap:.8rem;flex-wrap:wrap">
+          <a href="#herd" class="btn btn-primary" style="background:var(--primary);color:#fff;padding:.75rem 1.4rem;font-size:.86rem">Explore Full Livestock Gallery</a>
+          <a href="#contact" class="btn" style="border-color:var(--secondary);color:var(--secondary);padding:.75rem 1.4rem;font-size:.86rem">Schedule a Farm Visit</a>
+        </div>
+      </div>
+      <div class="about-mosaic">
+        <figure class="wide">
+          <picture>
+            <source srcset="/assets/photos/goat_herd_variety.webp" type="image/webp">
+            <img src="/assets/photos/goat_herd_variety.jpg" alt="Multi-breed goat herd in Pueblo pasture" loading="lazy" width="1200" height="900">
+          </picture>
+          <figcaption>Active Fuel-Mitigation Herd <span>50+ Head</span></figcaption>
+        </figure>
+        <figure>
+          <picture>
+            <source srcset="/assets/photos/goat_kids_duo.webp" type="image/webp">
+            <img src="/assets/photos/goat_kids_duo.jpg" alt="Spring goat kids raised at Baadlands Farms" loading="lazy" width="1200" height="900">
+          </picture>
+          <figcaption>Spring Goat Kids <span>Socialized Daily</span></figcaption>
+        </figure>
+        <figure>
+          <picture>
+            <source srcset="/assets/photos/waterfowl_ducks_flock.webp" type="image/webp">
+            <img src="/assets/photos/waterfowl_ducks_flock.jpg" alt="Flock of Muscovy ducks and heritage poultry" loading="lazy" width="1200" height="900">
+          </picture>
+          <figcaption>Waterfowl &amp; Flock <span>Ducks &middot; Geese</span></figcaption>
+        </figure>
+      </div>
     </div>
   </div>
 </section>
@@ -175,6 +274,13 @@ footer{background:var(--primary);color:#e9e4d1;padding:2.6rem 0 2rem;margin-top:
     <div class="streams">
 
       <article class="stream-card">
+        <div class="stream-thumb">
+          <picture>
+            <source srcset="/assets/photos/goat_spotted_sky.webp" type="image/webp">
+            <img src="/assets/photos/goat_spotted_sky.jpg" alt="Targeted goat grazing for wildfire fuel mitigation in Colorado" loading="lazy" width="1200" height="900">
+          </picture>
+          <span class="pill">50+ Head Ready</span>
+        </div>
         <div class="num">Stream 01</div>
         <h3>Targeted Goat Grazing</h3>
         <span class="price">$800 – $1,500 / acre &middot; or $500 – $1,000 / day</span>
@@ -190,6 +296,13 @@ footer{background:var(--primary);color:#e9e4d1;padding:2.6rem 0 2rem;margin-top:
       </article>
 
       <article class="stream-card">
+        <div class="stream-thumb">
+          <picture>
+            <source srcset="/assets/photos/pasture_pigs_pair.webp" type="image/webp">
+            <img src="/assets/photos/pasture_pigs_pair.jpg" alt="Pasture pork, goat and poultry custom-exempt meat shares" loading="lazy" width="1200" height="900">
+          </picture>
+          <span class="pill">CDA Custom Exempt</span>
+        </div>
         <div class="num">Stream 02</div>
         <h3>Custom-Exempt Meat Shares</h3>
         <span class="price">Goat &middot; Pasture Pork &middot; Holiday Poultry</span>
@@ -205,6 +318,13 @@ footer{background:var(--primary);color:#e9e4d1;padding:2.6rem 0 2rem;margin-top:
       </article>
 
       <article class="stream-card">
+        <div class="stream-thumb">
+          <picture>
+            <source srcset="/assets/photos/heritage_rooster.webp" type="image/webp">
+            <img src="/assets/photos/heritage_rooster.jpg" alt="Heritage rooster, laying hens, ducks, geese and guinea fowl" loading="lazy" width="1200" height="900">
+          </picture>
+          <span class="pill">Pasture Raised</span>
+        </div>
         <div class="num">Stream 03</div>
         <h3>Farm-Fresh Eggs &amp; Poultry</h3>
         <span class="price">$6 – $14 / dozen &middot; hatching eggs $35 – $85</span>
@@ -220,6 +340,13 @@ footer{background:var(--primary);color:#e9e4d1;padding:2.6rem 0 2rem;margin-top:
       </article>
 
       <article class="stream-card">
+        <div class="stream-thumb">
+          <picture>
+            <source srcset="/assets/photos/goat_kid_bottle.webp" type="image/webp">
+            <img src="/assets/photos/goat_kid_bottle.jpg" alt="Bottle-fed baby goat kids for goat yoga and mobile petting zoo events" loading="lazy" width="1200" height="900">
+          </picture>
+          <span class="pill">Mobile + On-Farm</span>
+        </div>
         <div class="num">Stream 04</div>
         <h3>Agritourism &amp; Mobile Events</h3>
         <span class="price">$25 – $35 / ticket &middot; add-on +$350 – $650</span>
@@ -237,6 +364,219 @@ footer{background:var(--primary);color:#e9e4d1;padding:2.6rem 0 2rem;margin-top:
     </div>
   </div>
 </section>
+
+<section id="herd">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Live From the Pueblo Ranch</span>
+      <h2>Meet the Baadlands herd &amp; flock</h2>
+      <p>Every photograph below is shot on our Pueblo property — our actual working goats, pasture hogs, ducks, geese, heritage turkeys, laying hens and prized roosters.</p>
+    </div>
+    <div class="gallery-filters" role="tablist" aria-label="Filter livestock photos by category">
+      <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Animals (12)</button>
+      <button class="filter-btn" data-filter="goats" role="tab" aria-selected="false">50+ Goat Herd &amp; Kids</button>
+      <button class="filter-btn" data-filter="waterfowl" role="tab" aria-selected="false">Ducks, Geese &amp; Turkeys</button>
+      <button class="filter-btn" data-filter="poultry" role="tab" aria-selected="false">Roosters &amp; Laying Hens</button>
+      <button class="filter-btn" data-filter="pigs" role="tab" aria-selected="false">Pasture Pigs &amp; Homestead</button>
+    </div>
+    <div class="herd-grid" id="herdGrid">
+
+      <article class="herd-card" data-cat="goats" data-img="/assets/photos/goat_herd_vista.jpg" data-title="Working Wildfire-Mitigation Herd" data-desc="Our 50+ head herd deployed across Southern Colorado brush and pasture under portable solar netting.">
+        <div class="herd-media">
+          <picture>
+            <source srcset="/assets/photos/goat_herd_vista.webp" type="image/webp">
+            <img src="/assets/photos/goat_herd_vista.jpg" alt="Working wildfire-mitigation goat herd at Baadlands Farms" loading="lazy" width="1200" height="900">
+          </picture>
+          <span class="herd-tag">Working Herd</span>
+        </div>
+        <div class="herd-body">
+          <h3>50+ Head Working Herd</h3>
+          <p>Deployed across Southern Colorado to clear scrub oak, cheatgrass and noxious weeds without chemicals.</p>
+          <div class="herd-meta"><span>Contract Grazing</span><span>9 CFR Part 79 Tagged</span></div>
+        </div>
+      </article>
+
+      <article class="herd-card" data-cat="goats" data-img="/assets/photos/goat_buck_hero.jpg" data-title="Senior Breeding Buck" data-desc="Hardy, dry-climate adapted breeding buck standing on Southern Colorado straw pasture.">
+        <div class="herd-media">
+          <picture>
+            <source srcset="/assets/photos/goat_buck_hero.webp" type="image/webp">
+            <img src="/assets/photos/goat_buck_hero.jpg" alt="Senior breeding buck at Baadlands Farms" loading="lazy" width="1200" height="900">
+          </picture>
+          <span class="herd-tag">Breeding Sire</span>
+        </div>
+        <div class="herd-body">
+          <h3>Proven Foundation Sire</h3>
+          <p>Bred for parasite resilience, strong hooves and high-forage appetite on steep rocky terrain.</p>
+          <div class="herd-meta"><span>Breeding Stock</span><span>Pueblo Ranch</span></div>
+        </div>
+      </article>
+
+      <article class="herd-card" data-cat="waterfowl" data-img="/assets/photos/heritage_turkeys_ducks.jpg" data-title="Heritage Turkeys, Ducks &amp; Geese" data-desc="Pasture-raised bronze and black heritage turkeys sharing the yard with our duck and goose flock.">
+        <div class="herd-media">
+          <picture>
+            <source srcset="/assets/photos/heritage_turkeys_ducks.webp" type="image/webp">
+            <img src="/assets/photos/heritage_turkeys_ducks.jpg" alt="Heritage turkeys in full strut with ducks and geese" loading="lazy" width="1200" height="900">
+          </picture>
+          <span class="herd-tag">Turkeys &amp; Waterfowl</span>
+        </div>
+        <div class="herd-body">
+          <h3>Heritage Turkeys &amp; Waterfowl</h3>
+          <p>Full-strut heritage toms raised alongside Pekin and Muscovy ducks for holiday table shares and fertile eggs.</p>
+          <div class="herd-meta"><span>Holiday Shares</span><span>$95–$160</span></div>
+        </div>
+      </article>
+
+      <article class="herd-card" data-cat="waterfowl" data-img="/assets/photos/waterfowl_ducks_flock.jpg" data-title="Muscovy &amp; Pekin Duck Flock" data-desc="Our duck flock foraging on open ground — producing rich, chef-grade baking eggs and natural pest control.">
+        <div class="herd-media">
+          <picture>
+            <source srcset="/assets/photos/waterfowl_ducks_flock.webp" type="image/webp">
+            <img src="/assets/photos/waterfowl_ducks_flock.jpg" alt="Muscovy and Pekin duck flock foraging on pasture" loading="lazy" width="1200" height="900">
+          </picture>
+          <span class="herd-tag">Duck Flock</span>
+        </div>
+        <div class="herd-body">
+          <h3>Muscovy &amp; Pekin Duck Flock</h3>
+          <p>Rich, high-yolk duck and goose eggs prized by local bakers and chefs, plus live ducklings in spring.</p>
+          <div class="herd-meta"><span>Chef-Grade Eggs</span><span>CRS &sect; 35-21-104</span></div>
+        </div>
+      </article>
+
+      <article class="herd-card" data-cat="goats" data-img="/assets/photos/goat_closeup_portrait.jpg" data-title="Blue-Eyed Nigerian Dwarf &amp; Cross Doe" data-desc="Up-close portrait showing the calm, curious temperament of our hand-raised does.">
+        <div class="herd-media">
+          <picture>
+            <source srcset="/assets/photos/goat_closeup_portrait.webp" type="image/webp">
+            <img src="/assets/photos/goat_closeup_portrait.jpg" alt="Close-up portrait of a blue-eyed goat at Baadlands Farms" loading="lazy" width="1200" height="900">
+          </picture>
+          <span class="herd-tag">Hand-Socialized</span>
+        </div>
+        <div class="herd-body">
+          <h3>Blue-Eyed Pasture Doe</h3>
+          <p>Calm, people-friendly does that anchor both our brush-clearing crews and our on-farm goat yoga sessions.</p>
+          <div class="herd-meta"><span>Does &amp; Milkers</span><span>Gentle Temperament</span></div>
+        </div>
+      </article>
+
+      <article class="herd-card" data-cat="goats" data-img="/assets/photos/goat_kids_duo.jpg" data-title="Spring Goat Kids" data-desc="Twin kids raised on sunshine and pasture — stars of our mobile petting zoo and Colorado Bounce Club party bundles.">
+        <div class="herd-media">
+          <picture>
+            <source srcset="/assets/photos/goat_kids_duo.webp" type="image/webp">
+            <img src="/assets/photos/goat_kids_duo.jpg" alt="Two baby goat kids standing side by side" loading="lazy" width="1200" height="900">
+          </picture>
+          <span class="herd-tag">Baby Kids</span>
+        </div>
+        <div class="herd-body">
+          <h3>Spring Goat Kids</h3>
+          <p>Handled from birth so they are gentle with children at birthday parties, school visits and snuggle sessions.</p>
+          <div class="herd-meta"><span>Agritourism</span><span>CBC Bundle Ready</span></div>
+        </div>
+      </article>
+
+      <article class="herd-card" data-cat="pigs" data-img="/assets/photos/pasture_pigs_pair.jpg" data-title="Pasture-Raised Hogs" data-desc="Heritage hogs raised outdoors with room to root — available as whole and half custom-exempt freezer shares.">
+        <div class="herd-media">
+          <picture>
+            <source srcset="/assets/photos/pasture_pigs_pair.webp" type="image/webp">
+            <img src="/assets/photos/pasture_pigs_pair.jpg" alt="Pasture-raised hogs at Baadlands Farms" loading="lazy" width="1200" height="900">
+          </picture>
+          <span class="herd-tag">Pasture Pork</span>
+        </div>
+        <div class="herd-body">
+          <h3>Pasture-Raised Hogs</h3>
+          <p>Raised on open ground and finished for deep marbling — whole and half hog shares cut to your butcher sheet.</p>
+          <div class="herd-meta"><span>Freezer Shares</span><span>$4.50–$6.00 / lb HW</span></div>
+        </div>
+      </article>
+
+      <article class="herd-card" data-cat="pigs" data-img="/assets/photos/spotted_piglet_held.jpg" data-title="Friendly Spotted Piglets" data-desc="Hand-socialized spotted piglets that join our mobile petting zoo and farm educational tours.">
+        <div class="herd-media">
+          <picture>
+            <source srcset="/assets/photos/spotted_piglet_held.webp" type="image/webp">
+            <img src="/assets/photos/spotted_piglet_held.jpg" alt="Hand-held spotted piglet at Baadlands Farms" loading="lazy" width="1200" height="900">
+          </picture>
+          <span class="herd-tag">Piglets</span>
+        </div>
+        <div class="herd-body">
+          <h3>Spotted Heritage Piglets</h3>
+          <p>Socialized early for calm handling — a favorite at mobile petting zoo bookings and family farm tours.</p>
+          <div class="herd-meta"><span>Petting Zoo</span><span>Feeder &amp; Share Stock</span></div>
+        </div>
+      </article>
+
+      <article class="herd-card" data-cat="poultry" data-img="/assets/photos/heritage_rooster.jpg" data-title="Prized Heritage Rooster" data-desc="Columbian-patterned rooster with full hackle and saddle plumage protecting our free-range laying flock.">
+        <div class="herd-media">
+          <picture>
+            <source srcset="/assets/photos/heritage_rooster.webp" type="image/webp">
+            <img src="/assets/photos/heritage_rooster.jpg" alt="Prized heritage rooster at Baadlands Farms" loading="lazy" width="1200" height="900">
+          </picture>
+          <span class="herd-tag">Prized Roosters</span>
+        </div>
+        <div class="herd-body">
+          <h3>Prized Heritage Roosters</h3>
+          <p>Flock guardians producing fertile hatching eggs and prime hackle &amp; saddle feathers for Colorado fly-tiers.</p>
+          <div class="herd-meta"><span>Fertile Flock</span><span>Fly-Tying Grade</span></div>
+        </div>
+      </article>
+
+      <article class="herd-card" data-cat="poultry" data-img="/assets/photos/pasture_hen.jpg" data-title="Pasture Laying Hens &amp; Guineas" data-desc="Golden-buff and heritage laying hens scratching on straw bedding for dark-yolk rainbow cartons.">
+        <div class="herd-media">
+          <picture>
+            <source srcset="/assets/photos/pasture_hen.webp" type="image/webp">
+            <img src="/assets/photos/pasture_hen.jpg" alt="Golden pasture laying hen on straw at Baadlands Farms" loading="lazy" width="1200" height="900">
+          </picture>
+          <span class="herd-tag">Laying Flock</span>
+        </div>
+        <div class="herd-body">
+          <h3>Pasture Hens &amp; Guinea Fowl</h3>
+          <p>Free-foraging hens and tick-clearing guinea fowl laying speckled, blue, olive and rich brown eggs daily.</p>
+          <div class="herd-meta"><span>Rainbow Dozens</span><span>$6–$14 / Dozen</span></div>
+        </div>
+      </article>
+
+      <article class="herd-card" data-cat="goats" data-img="/assets/photos/goat_doe_resting.jpg" data-title="Black &amp; Tan Pasture Doe" data-desc="Mature doe chewing cud in deep straw bedding between grazing rotations.">
+        <div class="herd-media">
+          <picture>
+            <source srcset="/assets/photos/goat_doe_resting.webp" type="image/webp">
+            <img src="/assets/photos/goat_doe_resting.jpg" alt="Black and tan doe resting on hay at Baadlands Farms" loading="lazy" width="1200" height="900">
+          </picture>
+          <span class="herd-tag">Foundation Doe</span>
+        </div>
+        <div class="herd-body">
+          <h3>Ranch Foundation Does</h3>
+          <p>Healthy, calm mothers raised on clean forage and mineral blocks with zero growth hormones.</p>
+          <div class="herd-meta"><span>Meat &amp; Brush Line</span><span>100% Pasture</span></div>
+        </div>
+      </article>
+
+      <article class="herd-card" data-cat="goats" data-img="/assets/photos/farmer_holding_kid.jpg" data-title="Nursery Pen Kids" data-desc="Young multi-colored goat kids bedded on clean golden straw in our Pueblo nursery pen.">
+        <div class="herd-media">
+          <picture>
+            <source srcset="/assets/photos/farmer_holding_kid.webp" type="image/webp">
+            <img src="/assets/photos/farmer_holding_kid.jpg" alt="Young goat kids resting on golden straw bedding" loading="lazy" width="1200" height="900">
+          </picture>
+          <span class="herd-tag">Nursery Herd</span>
+        </div>
+        <div class="herd-body">
+          <h3>Nursery Pen &amp; Bottle Kids</h3>
+          <p>Clean straw bedding, daily health checks and hands-on care from day one under Stacey&rsquo;s safety standards.</p>
+          <div class="herd-meta"><span>Goat Yoga Ready</span><span>Pueblo, CO</span></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Full size livestock photo">
+  <div class="lightbox-inner">
+    <img id="lbImg" src="" alt="">
+    <div class="lightbox-bar">
+      <div>
+        <h4 id="lbTitle"></h4>
+        <p id="lbDesc"></p>
+      </div>
+      <button class="lightbox-close" id="lbClose" type="button">Close &times;</button>
+    </div>
+  </div>
+</div>
 
 <section id="calculator" class="tint">
   <div class="container">
@@ -511,6 +851,45 @@ footer{background:var(--primary);color:#e9e4d1;padding:2.6rem 0 2rem;margin-top:
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
   });
+
+  var filterBtns = document.querySelectorAll('.filter-btn');
+  var herdCards = document.querySelectorAll('.herd-card');
+  filterBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var f = btn.getAttribute('data-filter');
+      filterBtns.forEach(function(b){ b.classList.remove('active'); b.setAttribute('aria-selected', 'false'); });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+      herdCards.forEach(function(card){
+        if (f === 'all' || card.getAttribute('data-cat') === f) {
+          card.removeAttribute('hidden');
+        } else {
+          card.setAttribute('hidden', 'hidden');
+        }
+      });
+    });
+  });
+
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lbImg');
+  var lbTitle = document.getElementById('lbTitle');
+  var lbDesc = document.getElementById('lbDesc');
+  var lbClose = document.getElementById('lbClose');
+  function closeLb(){ if(lb){ lb.classList.remove('open'); lbImg.src = ''; } }
+  herdCards.forEach(function(card){
+    card.addEventListener('click', function(){
+      var src = card.getAttribute('data-img');
+      if (!src || !lb) return;
+      lbImg.src = src;
+      lbImg.alt = card.getAttribute('data-title') || 'Baadlands Farms livestock';
+      lbTitle.textContent = card.getAttribute('data-title') || '';
+      lbDesc.textContent = card.getAttribute('data-desc') || '';
+      lb.classList.add('open');
+    });
+  });
+  if (lbClose) lbClose.addEventListener('click', closeLb);
+  if (lb) lb.addEventListener('click', function(e){ if (e.target === lb) closeLb(); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeLb(); });
 
   function initMap(){
     if (typeof L === 'undefined') { document.getElementById('map').innerHTML = '<div style="padding:2rem;text-align:center;color:#4a5340">Map unavailable offline. Service area: Pueblo, Pueblo West, Colorado Springs, Monument, Cañon City, Beulah, Rye — 120-mile radius.</div>'; return; }
