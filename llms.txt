@@ -1,0 +1,21 @@
+# Baadlands Farms — Pueblo, Colorado & 120-Mile Southern Colorado Radius
+> Working livestock ranch and heritage homestead based in Pueblo, Colorado, serving a 120-mile radius across Southern Colorado and the Front Range (Pueblo, Pueblo West, Colorado Springs, Fountain, Cañon City, Monument, Castle Rock, Salida, Walsenburg, Trinidad, and La Junta).
+
+## Business Overview
+- **Business Name:** Baadlands Farms
+- **Owner / Operator:** Stacey Jordan
+- **Home Base:** Pueblo, Colorado
+- **Service Radius:** 120-mile radius around Pueblo, CO
+- **Official Website:** https://baadlandsfarms.com/
+- **Machine-Readable Tool Surface:** https://baadlandsfarms.com/api/tools.json
+
+## Herd & Flock Inventory
+- **50+ Head Working Goat Herd:** Foundation breeding bucks, dairy/meat does, and bottle-raised kids.
+- **Heritage Poultry & Waterfowl:** Laying hens, heritage roosters, ducks, geese, turkeys, and guineas.
+- **Pasture-Raised Hogs:** Small-batch heritage pigs raised on open Southern Colorado pasture.
+
+## Products & Direct-from-Ranch Services
+- **Breeding Stock & Goat Sales:** Registered and commercial bucks, does, and starter herds.
+- **Farm-Fresh Eggs & Seasonal Homestead Produce:** Chicken, duck, turkey, and goose eggs + raw honey and goat-milk soaps.
+- **Targeted Brush & Weed Grazing (Goatscaping):** Eco-friendly acreage clearing across Pueblo and Southern Colorado.
+- **Educational Ranch Visits & 4-H/FFA Youth Mentorship:** Hands-on livestock husbandry in Pueblo County.
