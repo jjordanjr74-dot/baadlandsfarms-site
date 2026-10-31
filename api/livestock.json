@@ -1,0 +1,199 @@
+{
+  "updated_at": "2026-10-31",
+  "ranch": "Baadlands Farms — Pueblo, Colorado (120-Mile Southern CO Radius)",
+  "owner": "Stacey Jordan",
+  "contact_email": "hello@baadlandsfarms.com",
+  "compliance_note": "All intact breeding and show goats leave the ranch with an official USDA Scrapie Flock ID ear tag (9 CFR Part 79) and Colorado Bill of Sale. Exempt from in-state Colorado brand inspection under CRS § 35-53-101.",
+  "listings": [
+    {
+      "id": "BF-GOAT-BUCK-01",
+      "category": "goats",
+      "subcategory": "Foundation Breeding Buck",
+      "title": "Mature Boer-Cross Herd Sire (Breeding Buck)",
+      "price_display": "$450",
+      "price_usd": 450,
+      "unit": "per head",
+      "status": "Available Now",
+      "badge": "Proven Sire · Scrapie Tagged",
+      "photo_jpg": "/assets/photos/goat_buck_hero.jpg",
+      "photo_webp": "/assets/photos/goat_buck_hero.webp",
+      "specs": [
+        "Proven fertility & hardy Southern CO range genetics",
+        "Heavy-boned Boer / Spanish cross frame",
+        "USDA Scrapie Flock ID tagged & health checked"
+      ],
+      "description": "Deep-bodied, horned herd sire conditioned on semi-arid Pueblo pasture and Gambel oak browse. Ready to put muscle, parasite resilience, and hardiness into your meat or brush herd."
+    },
+    {
+      "id": "BF-GOAT-DOE-01",
+      "category": "goats",
+      "subcategory": "Breeding & Dairy/Meat Does",
+      "title": "Pasture-Raised Breeding Doe (Open or Bred)",
+      "price_display": "$325 – $400",
+      "price_usd": 325,
+      "unit": "per head ($325 open / $400 bred)",
+      "status": "Available Now",
+      "badge": "High-Twinning Line · Scrapie Tagged",
+      "photo_jpg": "/assets/photos/goat_doe_resting.jpg",
+      "photo_webp": "/assets/photos/goat_doe_resting.webp",
+      "specs": [
+        "Attentive mothers with strong milk bags",
+        "Calm temperament — easy in paddocks & chutes",
+        "USDA Scrapie Flock ID tag + hoof & mineral record"
+      ],
+      "description": "Foundation Boer, Kiko, and Spanish-cross does raised on open Pueblo pasture. Ideal for expanding a homestead herd, producing 4-H/FFA show prospects, or building a commercial brush crew."
+    },
+    {
+      "id": "BF-GOAT-KID-01",
+      "category": "goats",
+      "subcategory": "Bottle-Raised Kids & 4-H/FFA Wethers",
+      "title": "Bottle-Fed Goat Kids, Doelings & Wethers",
+      "price_display": "$225 – $275",
+      "price_usd": 225,
+      "unit": "per kid ($225 wether / $275 doeling)",
+      "status": "Available Now",
+      "badge": "Hand-Socialized · 4-H / Homestead Ready",
+      "photo_jpg": "/assets/photos/goat_kids_duo.jpg",
+      "photo_webp": "/assets/photos/goat_kids_duo.webp",
+      "specs": [
+        "Bottle-raised by hand — come running when called",
+        "Disbudded/wethered options for pet & brush homes",
+        "Includes 4-H/FFA youth husbandry mentorship"
+      ],
+      "description": "Friendly, people-loving goat kids raised in our family yard. Perfect for 4-H/FFA county fair projects, small-acreage weed eaters, companion herds, or future foundation stock."
+    },
+    {
+      "id": "BF-GOAT-STARTER-03",
+      "category": "goats",
+      "subcategory": "Turnkey Homestead Starter Herd",
+      "title": "3-Head Homestead Starter Trio (2 Does + 1 Buck or Wether)",
+      "price_display": "$900",
+      "price_usd": 900,
+      "unit": "per 3-head package (saves $125+)",
+      "status": "Available Now",
+      "badge": "Best Value · Instant Herd",
+      "photo_jpg": "/assets/photos/goat_herd_variety.jpg",
+      "photo_webp": "/assets/photos/goat_herd_variety.webp",
+      "specs": [
+        "Bonded trio — zero lone-goat stress on move-in day",
+        "Unrelated breeding buck option or companion wether",
+        "Includes 30-day Pueblo feeding & fencing transition guide"
+      ],
+      "description": "Goats are herd animals that thrive in groups. Start your homestead or acreage weed-clearing crew with a bonded trio selected by Stacey for temperament and genetic diversity."
+    },
+    {
+      "id": "BF-GOAT-SPOTTED-01",
+      "category": "goats",
+      "subcategory": "Dappled & Painted Specialty Stock",
+      "title": "Painted & Dappled Boer-Cross Yearlings",
+      "price_display": "$375",
+      "price_usd": 375,
+      "unit": "per head",
+      "status": "Limited Selection",
+      "badge": "Loud Color · Flashy Markings",
+      "photo_jpg": "/assets/photos/goat_spotted_sky.jpg",
+      "photo_webp": "/assets/photos/goat_spotted_sky.webp",
+      "specs": [
+        "Eye-catching traditional & dappled coat patterns",
+        "Hardy hooves & high browse drive",
+        "Scrapie tagged with full bill of sale"
+      ],
+      "description": "Flashy spotted and painted goats that stand out in the pasture and produce loud-colored kids while keeping full meat-and-brush working genetics."
+    },
+    {
+      "id": "BF-PIG-FEEDER-01",
+      "category": "pigs",
+      "subcategory": "Weaned Feeder Piglets & Breeding Gilts",
+      "title": "Pasture-Raised Heritage Feeder Piglets",
+      "price_display": "$150",
+      "price_usd": 150,
+      "unit": "per piglet ($275 / pair)",
+      "status": "Spring / Fall Litters",
+      "badge": "Outdoor-Born · Non-Confinement",
+      "photo_jpg": "/assets/photos/spotted_piglet_held.jpg",
+      "photo_webp": "/assets/photos/spotted_piglet_held.webp",
+      "specs": [
+        "Weaned on grain, alfalfa & garden produce",
+        "Active rooters — great for turning garden beds",
+        "Raised outdoors in Pueblo sunshine, never in crates"
+      ],
+      "description": "Thrifty, calm heritage-cross piglets ready to grow out for your family freezer, 4-H swine project, or small-scale homestead breeding program."
+    },
+    {
+      "id": "BF-PIG-HOG-02",
+      "category": "pigs",
+      "subcategory": "Live Finished Hogs & Breeding Stock",
+      "title": "Live Market Hogs & Proven Pasture Stock",
+      "price_display": "$450",
+      "price_usd": 450,
+      "unit": "per live head (or custom share)",
+      "status": "Reserve Now",
+      "badge": "Pasture-Finished · Custom Butcher Ready",
+      "photo_jpg": "/assets/photos/pasture_pigs_pair.jpg",
+      "photo_webp": "/assets/photos/pasture_pigs_pair.webp",
+      "specs": [
+        "Sold live on-hoof with Colorado Bill of Sale",
+        "Can coordinate drop-off at CDA Custom Exempt butcher",
+        "Richly marbled heritage pork genetics"
+      ],
+      "description": "Buy live on the hoof for home harvest, breeding, or direct delivery to a licensed Colorado custom-exempt processor."
+    },
+    {
+      "id": "BF-POULTRY-LAYERS-01",
+      "category": "poultry",
+      "subcategory": "Laying Hens, Pullets & Heritage Roosters",
+      "title": "Point-of-Lay Pullets, Laying Hens & Roosters",
+      "price_display": "$25 – $35",
+      "price_usd": 35,
+      "unit": "$35 laying hen / $25 heritage rooster",
+      "status": "Available Now",
+      "badge": "Rainbow Egg Genetics · Free-Range",
+      "photo_jpg": "/assets/photos/pasture_hen.jpg",
+      "photo_webp": "/assets/photos/pasture_hen.webp",
+      "specs": [
+        "Olive, blue, dark brown & cream egg layers",
+        "Predator-savvy flock protector roosters ($25)",
+        "Acclimated to Southern Colorado heat & cold"
+      ],
+      "description": "Skip the brooder lamp and start collecting fresh eggs immediately with outdoor-hardened pullets, laying hens, and handsome heritage flock roosters."
+    },
+    {
+      "id": "BF-POULTRY-WATERFOWL-01",
+      "category": "poultry",
+      "subcategory": "Ducks, Geese, Turkeys & Guineas",
+      "title": "Farm Ducks, Geese, Heritage Turkeys & Tick-Eating Guineas",
+      "price_display": "$30 – $65",
+      "price_usd": 30,
+      "unit": "$30 ducks & guineas / $55 geese / $65 turkeys",
+      "status": "Available Now",
+      "badge": "Pest Control & Homestead Flock",
+      "photo_jpg": "/assets/photos/heritage_turkeys_ducks.jpg",
+      "photo_webp": "/assets/photos/heritage_turkeys_ducks.webp",
+      "specs": [
+        "Guineas & ducks devour ticks, grasshoppers & slugs",
+        "Geese serve as natural yard guardians & weeders",
+        "Broad-breasted & heritage turkeys for homesteads"
+      ],
+      "description": "Hardworking barnyard birds raised alongside goats and dogs so they integrate smoothly into your acreage or orchard."
+    },
+    {
+      "id": "BF-SMALL-RABBIT-01",
+      "category": "pigs",
+      "subcategory": "Homestead Rabbits & Bunnies",
+      "title": "Gentle Homestead Rabbits (Breeders & Youth Pets)",
+      "price_display": "$40",
+      "price_usd": 40,
+      "unit": "per rabbit ($100 / breeding trio)",
+      "status": "Available Now",
+      "badge": "Calm Temperament · 4-H Favorite",
+      "photo_jpg": "/assets/photos/farm_rabbit_portrait.jpg",
+      "photo_webp": "/assets/photos/farm_rabbit_portrait.webp",
+      "specs": [
+        "Handled daily by family & youth",
+        "Cold-hardy, clean-hutch raised",
+        "Produces garden-ready cold manure fertilizer"
+      ],
+      "description": "Soft-coated, docile homestead rabbits ideal for 4-H showmanship, backyard garden fertilizer, or sustainable small-acreage meat/breeding trios."
+    }
+  ]
+}

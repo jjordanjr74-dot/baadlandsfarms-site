@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Baadlands Farms — Premier Targeted Goat Grazing, Meat Shares &amp; Farm Eggs in Pueblo, CO</title>
-<meta name="description" content="Baadlands Farms delivers professional targeted goat grazing for wildfire fuel mitigation and noxious weed clearing, USDA custom-exempt goat, pork and poultry meat shares, farm-fresh rainbow eggs, and agritourism across Pueblo, Colorado Springs, Cañon City and a 120-mile radius. Request a site visit.">
-<meta name="keywords" content="goat grazing Pueblo, wildfire fuel mitigation Colorado, noxious weed clearing, goat meat shares Pueblo, cabrito Colorado Springs, pasture pork shares, farm fresh duck eggs Pueblo, goat yoga Colorado, petting zoo Pueblo">
+<title>Baadlands Farms — Goats &amp; Farm Animals for Sale, Targeted Grazing, Meat Shares &amp; Farm Eggs in Pueblo, CO</title>
+<meta name="description" content="Baadlands Farms in Pueblo, Colorado: live goats (breeding bucks, does, bottle-raised kids, starter herds), feeder pigs, laying hens, roosters, ducks, geese, turkeys &amp; rabbits for sale with posted prices and ranch photos — plus 50+ head wildfire goat grazing across a 120-mile Southern Colorado radius.">
+<meta name="keywords" content="goats for sale Pueblo Colorado, farm animals for sale Southern Colorado, breeding bucks does kids for sale CO, goat grazing Pueblo, wildfire fuel mitigation Colorado, noxious weed clearing, goat meat shares Pueblo, cabrito Colorado Springs, pasture pork shares, farm fresh duck eggs Pueblo, goat yoga Colorado, petting zoo Pueblo">
 <meta name="author" content="Baadlands Farms — Stacey, Owner &amp; Operator">
-<meta property="og:title" content="Baadlands Farms — Targeted Goat Grazing &amp; Farm Direct in Pueblo, CO">
-<meta property="og:description" content="50+ head herd clearing wildfire fuels without herbicides. Custom-exempt meat shares, rainbow eggs, and farm events across the 120-mile Pueblo radius.">
+<meta property="og:title" content="Baadlands Farms — Goats &amp; Farm Animals for Sale + Targeted Grazing | Pueblo, CO">
+<meta property="og:description" content="Browse live goats, feeder pigs, laying hens, ducks, geese, turkeys &amp; rabbits for sale with posted prices and ranch photos — plus 50+ head wildfire goat grazing across the 120-mile Pueblo radius.">
 <meta property="og:url" content="https://baadlandsfarms.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Baadlands Farms">
@@ -148,6 +148,35 @@ footer{background:var(--primary);color:#e9e4d1;padding:2.6rem 0 2rem;margin-top:
 .herd-body h3{font-size:1.06rem;color:var(--primary);margin-bottom:.3rem;line-height:1.3}
 .herd-body p{font-size:.88rem;color:#4a5340;line-height:1.5;margin-bottom:.65rem;flex:1}
 .herd-meta{font-size:.76rem;font-weight:800;color:var(--secondary);text-transform:uppercase;letter-spacing:.7px;border-top:1px solid var(--line);padding-top:.55rem;display:flex;justify-content:space-between}
+.sale-banner{background:linear-gradient(135deg,#fffdf5 0%,#fef3c7 55%,#ecfccb 100%);border:2px solid #d97706;border-radius:14px;padding:1.35rem 1.6rem;margin-bottom:2rem;display:flex;flex-wrap:wrap;gap:1.1rem;align-items:center;justify-content:space-between;box-shadow:0 10px 26px rgba(139,94,52,.11)}
+.sale-banner h3{font-size:1.2rem;color:var(--primary);margin-bottom:.2rem}
+.sale-banner p{font-size:.92rem;color:#3d4733;margin:0}
+.sale-filters{display:flex;flex-wrap:wrap;gap:.55rem;justify-content:center;margin-bottom:1.8rem}
+.sale-filter-btn{background:var(--white);border:1.5px solid var(--line);color:var(--primary);padding:.55rem 1.15rem;border-radius:999px;font-weight:800;font-size:.84rem;letter-spacing:.6px;text-transform:uppercase;cursor:pointer;transition:all .18s;font-family:inherit}
+.sale-filter-btn:hover,.sale-filter-btn.active{background:var(--secondary);color:var(--white);border-color:var(--secondary);box-shadow:0 4px 14px rgba(139,94,52,.26)}
+.sale-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1.45rem}
+.sale-card{background:var(--white);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 10px 26px rgba(35,45,20,.09);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.sale-card:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(35,45,20,.16)}
+.sale-card[hidden]{display:none!important}
+.sale-media{position:relative;aspect-ratio:4/3;background:#1e3011;overflow:hidden;cursor:pointer}
+.sale-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
+.sale-card:hover .sale-media img{transform:scale(1.05)}
+.sale-status{position:absolute;top:12px;left:12px;background:#166534;color:#fff;font-size:.72rem;font-weight:800;letter-spacing:.8px;text-transform:uppercase;padding:.3rem .75rem;border-radius:999px;box-shadow:0 4px 12px rgba(0,0,0,.25)}
+.sale-price-tag{position:absolute;bottom:12px;right:12px;background:#fffbeb;color:#1f380f;border:2px solid #d97706;font-size:1.15rem;font-weight:900;padding:.32rem .82rem;border-radius:8px;box-shadow:0 6px 16px rgba(0,0,0,.28)}
+.sale-body{padding:1.25rem 1.3rem 1.35rem;display:flex;flex-direction:column;flex:1}
+.sale-sub{font-size:.75rem;font-weight:800;letter-spacing:1.1px;text-transform:uppercase;color:var(--secondary);margin-bottom:.28rem}
+.sale-body h3{font-size:1.16rem;color:var(--primary);margin-bottom:.38rem;line-height:1.3}
+.sale-unit{font-size:.82rem;font-weight:800;color:var(--primary);background:#eef5e6;padding:.24rem .62rem;border-radius:5px;display:inline-block;margin-bottom:.65rem;align-self:flex-start}
+.sale-body p{font-size:.9rem;color:#414a37;line-height:1.52;margin-bottom:.8rem}
+.sale-specs{list-style:none;margin:0 0 1.05rem;padding:.7rem .85rem;background:var(--light);border-radius:8px;border:1px solid var(--line);font-size:.84rem}
+.sale-specs li{padding:.2rem 0 .2rem 1.15rem;position:relative;color:#2b3325}
+.sale-specs li:before{content:"\2713";position:absolute;left:0;color:var(--primary);font-weight:900}
+.sale-actions{margin-top:auto;display:flex;gap:.55rem;flex-wrap:wrap}
+.sale-actions .btn{flex:1;padding:.68rem .9rem;font-size:.82rem;text-align:center}
+.post-drawer{display:none;background:var(--white);border:2px solid var(--primary);border-radius:12px;padding:1.5rem;margin-bottom:2rem;box-shadow:0 12px 30px rgba(35,45,20,.12)}
+.post-drawer.open{display:block}
+.post-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem;margin-top:1rem}
+.post-grid input,.post-grid select,.post-grid textarea{width:100%;padding:.68rem .8rem;border:1.5px solid #cfc9b4;border-radius:6px;font:inherit;background:#fff}
 .lightbox{position:fixed;inset:0;background:rgba(12,18,8,.92);z-index:2000;display:none;align-items:center;justify-content:center;padding:1.5rem}
 .lightbox.open{display:flex}
 .lightbox-inner{max-width:960px;width:100%;background:var(--white);border-radius:12px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,.55);position:relative}
@@ -166,6 +195,7 @@ footer{background:var(--primary);color:#e9e4d1;padding:2.6rem 0 2rem;margin-top:
   <div class="container nav">
     <div class="logo">Baadlands <span>Farms</span></div>
     <nav class="nav-links" aria-label="Primary">
+      <a href="#animals-for-sale" style="color:var(--accent);font-weight:800">Animals for Sale</a>
       <a href="#services">Services</a>
       <a href="#herd">Meet the Herd</a>
       <a href="#calculator">Grazing Estimator</a>
@@ -180,17 +210,17 @@ footer{background:var(--primary);color:#e9e4d1;padding:2.6rem 0 2rem;margin-top:
   <div class="container hero-grid">
     <div>
       <span class="eyebrow">Pueblo, Colorado &middot; 120-Mile Service Radius</span>
-      <h1>Targeted goat grazing that <em>removes wildfire fuel</em> — without herbicides or machinery.</h1>
-      <p class="lede">Baadlands Farms deploys a 50-plus head herd to clear scrub oak, cheatgrass and Russian thistle on acreage, HOA common land, solar arrays and drainage districts. Plus custom-exempt meat shares, rainbow eggs and farm events.</p>
+      <h1>Live goats &amp; farm animals for sale — plus targeted grazing that <em>removes wildfire fuel</em>.</h1>
+      <p class="lede">Shop breeding bucks, does, bottle-raised kids, starter herds, pasture pigs, laying hens, roosters, ducks, geese, turkeys and rabbits direct from our Pueblo ranch with posted prices &amp; photos — or deploy our 50+ head herd for herbicide-free brush clearing.</p>
       <div class="hero-actions">
-        <a href="#calculator" class="btn btn-primary">Calculate My Grazing Quote</a>
-        <a href="#herd" class="btn btn-ghost">Meet Our Animals</a>
+        <a href="#animals-for-sale" class="btn btn-primary">Shop Live Animals &amp; Prices</a>
+        <a href="#calculator" class="btn btn-ghost">Calculate Grazing Quote</a>
       </div>
       <div class="hero-stats">
         <div><b>50+</b><span>Head of Goats</span></div>
+        <div><b>$25–$900</b><span>Live Animal Prices</span></div>
         <div><b>120 mi</b><span>Service Radius</span></div>
-        <div><b>$800–$1,500</b><span>Per Acre</span></div>
-        <div><b>0</b><span>Herbicides Used</span></div>
+        <div><b>$800–$1,500</b><span>Grazing / Acre</span></div>
       </div>
     </div>
     <div class="hero-showcase" aria-label="Baadlands Farms live herd photography">
@@ -268,10 +298,32 @@ footer{background:var(--primary);color:#e9e4d1;padding:2.6rem 0 2rem;margin-top:
   <div class="container">
     <div class="section-head">
       <span class="kicker">Revenue Streams</span>
-      <h2>Four ways to work with Baadlands Farms</h2>
-      <p>Land management for property owners. Food for households and chefs. Experiences for families and groups.</p>
+      <h2>Five ways to buy or work with Baadlands Farms</h2>
+      <p>Live goats and farm animals for sale with posted prices. Land management for property owners. Food for households. Experiences for families.</p>
     </div>
     <div class="streams">
+
+      <article class="stream-card">
+        <div class="stream-thumb">
+          <picture>
+            <source srcset="/assets/photos/goat_buck_hero.webp" type="image/webp">
+            <img src="/assets/photos/goat_buck_hero.jpg" alt="Live goats and farm animals for sale in Pueblo, Colorado" width="1200" height="900">
+          </picture>
+          <span class="pill">Posted Prices &amp; Photos</span>
+        </div>
+        <div class="num">Stream 01</div>
+        <h3>Live Goats &amp; Animals for Sale</h3>
+        <span class="price">Goats $225 – $450 &middot; 3-Head Trio $900 &middot; Poultry $25 – $65</span>
+        <ul>
+          <li>Foundation breeding bucks ($450) &amp; open/bred does ($325–$400)</li>
+          <li>Bottle-raised goat kids, doelings &amp; 4-H/FFA wethers ($225–$275)</li>
+          <li>Turnkey 3-head Homestead Starter Trio ($900 — saves $125+)</li>
+          <li>Pasture feeder piglets ($150) &amp; gentle homestead rabbits ($40)</li>
+          <li>Laying hens ($35), roosters ($25), ducks/guineas ($30), geese ($55), turkeys ($65)</li>
+          <li>USDA Scrapie Flock ID tagged (9 CFR Part 79) + Colorado Bill of Sale</li>
+        </ul>
+        <a class="card-link" href="#animals-for-sale">Browse live catalog &amp; prices &rarr;</a>
+      </article>
 
       <article class="stream-card">
         <div class="stream-thumb">
@@ -359,6 +411,353 @@ footer{background:var(--primary);color:#e9e4d1;padding:2.6rem 0 2rem;margin-top:
           <li>Colorado agritourism liability shield under CRS &sect; 13-21-121</li>
         </ul>
         <a class="card-link" href="#contact">Book an event &rarr;</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="animals-for-sale" class="tint">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Direct From the Pueblo Ranch &middot; Posted Prices &amp; Photos</span>
+      <h2>Live Goats &amp; Farm Animals for Sale</h2>
+      <p>Buy healthy, Southern Colorado pasture-raised goats, feeder pigs, laying hens, heritage roosters, ducks, geese, turkeys and homestead rabbits directly from Baadlands Farms. Click any photo to enlarge or reserve your animals today.</p>
+    </div>
+
+    <div class="sale-banner">
+      <div>
+        <h3>&#128016; Every Goat Leaves Scrapie-Tagged &amp; Ranch-Verified</h3>
+        <p>All breeding bucks, does, and show stock include an official <strong>USDA Scrapie Flock ID ear tag (9 CFR Part 79)</strong> and a signed Colorado Bill of Sale. Exempt from in-state Colorado brand inspection under CRS &sect; 35-53-101 for immediate ranch-gate pickup or delivery across our 120-mile Southern CO radius.</p>
+      </div>
+      <div style="display:flex;gap:.65rem;flex-wrap:wrap">
+        <button type="button" class="btn btn-primary" id="togglePostDrawer" style="background:var(--primary);color:#fff;padding:.72rem 1.25rem;font-size:.84rem">+ Post New Animal Listing (Photo &amp; Price)</button>
+        <a href="/api/livestock.json" class="btn" style="background:#fff;border:1.5px solid var(--secondary);color:var(--secondary);padding:.72rem 1.15rem;font-size:.82rem">Live JSON Feed</a>
+      </div>
+    </div>
+
+    <div class="post-drawer" id="postAnimalDrawer" aria-label="Post a new animal listing with photo and price">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap">
+        <div>
+          <span class="kicker" style="margin-bottom:.2rem">Ranch Manager Quick-Post</span>
+          <h3 style="color:var(--primary);font-size:1.3rem">Post an Animal for Sale with Photo &amp; Price</h3>
+          <p style="font-size:.88rem;color:#4a5340">Upload a photo from your phone or camera, set the price and details, and preview/publish it directly to the Baadlands Farms catalog.</p>
+        </div>
+        <button type="button" class="lightbox-close" id="closePostDrawer">Close &times;</button>
+      </div>
+      <form id="postAnimalForm">
+        <div class="post-grid">
+          <div>
+            <label style="display:block;font-weight:800;font-size:.8rem;color:var(--primary);margin-bottom:.3rem;text-transform:uppercase">Category</label>
+            <select id="paCategory" required>
+              <option value="goats">Goats (Bucks, Does, Kids, Wethers)</option>
+              <option value="pigs">Pigs &amp; Small Stock (Piglets, Hogs, Rabbits)</option>
+              <option value="poultry">Poultry &amp; Waterfowl (Hens, Roosters, Ducks, Geese, Turkeys, Guineas)</option>
+            </select>
+          </div>
+          <div>
+            <label style="display:block;font-weight:800;font-size:.8rem;color:var(--primary);margin-bottom:.3rem;text-transform:uppercase">Animal Title / Breed</label>
+            <input type="text" id="paTitle" placeholder="e.g., 2-Year Boer Buck or Pair of Doelings" required>
+          </div>
+          <div>
+            <label style="display:block;font-weight:800;font-size:.8rem;color:var(--primary);margin-bottom:.3rem;text-transform:uppercase">Posted Price</label>
+            <input type="text" id="paPrice" placeholder="e.g., $350" required>
+          </div>
+          <div>
+            <label style="display:block;font-weight:800;font-size:.8rem;color:var(--primary);margin-bottom:.3rem;text-transform:uppercase">Unit / Terms</label>
+            <input type="text" id="paUnit" placeholder="e.g., per head · Scrapie tagged" value="per head · Pueblo ranch pickup">
+          </div>
+          <div>
+            <label style="display:block;font-weight:800;font-size:.8rem;color:var(--primary);margin-bottom:.3rem;text-transform:uppercase">Upload Animal Photo</label>
+            <input type="file" id="paPhotoFile" accept="image/*">
+          </div>
+          <div>
+            <label style="display:block;font-weight:800;font-size:.8rem;color:var(--primary);margin-bottom:.3rem;text-transform:uppercase">Or Select Ranch Photo</label>
+            <select id="paPhotoPreset">
+              <option value="/assets/photos/goat_buck_hero.jpg">Senior Breeding Buck</option>
+              <option value="/assets/photos/goat_doe_resting.jpg">Pasture Breeding Doe</option>
+              <option value="/assets/photos/goat_kids_duo.jpg">Goat Kids Duo</option>
+              <option value="/assets/photos/goat_spotted_sky.jpg">Spotted Brush Goat</option>
+              <option value="/assets/photos/goat_closeup_portrait.jpg">Blue-Eyed Doe Portrait</option>
+              <option value="/assets/photos/goat_herd_variety.jpg">Starter Herd Trio</option>
+              <option value="/assets/photos/spotted_piglet_held.jpg">Spotted Heritage Piglet</option>
+              <option value="/assets/photos/pasture_pigs_pair.jpg">Pasture Hogs</option>
+              <option value="/assets/photos/pasture_hen.jpg">Pasture Laying Hen</option>
+              <option value="/assets/photos/heritage_rooster.jpg">Heritage Rooster</option>
+              <option value="/assets/photos/heritage_turkeys_ducks.jpg">Turkeys &amp; Ducks</option>
+              <option value="/assets/photos/farm_rabbit_portrait.jpg">Homestead Rabbit</option>
+            </select>
+          </div>
+        </div>
+        <div style="margin-top:.9rem">
+          <label style="display:block;font-weight:800;font-size:.8rem;color:var(--primary);margin-bottom:.3rem;text-transform:uppercase">Description, Age, Markings &amp; Health Notes</label>
+          <textarea id="paDesc" rows="2" placeholder="Describe age, temperament, markings, vaccination/deworming, and whether Scrapie tagged..." required></textarea>
+        </div>
+        <div style="margin-top:1rem;display:flex;gap:.8rem;flex-wrap:wrap;align-items:center">
+          <button type="submit" class="btn btn-primary" style="background:var(--primary);color:#fff;padding:.72rem 1.4rem;font-size:.85rem">Add Listing to Page Immediately</button>
+          <button type="button" class="btn" id="paSendToFarm" style="background:var(--secondary);color:#fff;padding:.72rem 1.4rem;font-size:.85rem">Send Listing to Permanent Ranch Feed</button>
+          <span id="paStatus" style="font-size:.85rem;font-weight:700;color:var(--primary)"></span>
+        </div>
+      </form>
+    </div>
+
+    <div class="sale-filters" role="tablist" aria-label="Filter animals for sale by category">
+      <button class="sale-filter-btn active" data-sale-filter="all" role="tab" aria-selected="true">All Animals for Sale (10)</button>
+      <button class="sale-filter-btn" data-sale-filter="goats" role="tab" aria-selected="false">Goats: Bucks, Does, Kids &amp; Trios (5)</button>
+      <button class="sale-filter-btn" data-sale-filter="pigs" role="tab" aria-selected="false">Pigs, Hogs &amp; Rabbits (3)</button>
+      <button class="sale-filter-btn" data-sale-filter="poultry" role="tab" aria-selected="false">Chickens, Roosters, Ducks, Geese &amp; Turkeys (2)</button>
+    </div>
+
+    <div class="sale-grid" id="saleGrid">
+
+      <article class="sale-card" data-sale-cat="goats">
+        <div class="sale-media" data-img="/assets/photos/goat_buck_hero.jpg" data-title="Mature Boer-Cross Herd Sire — $450" data-desc="Deep-bodied, horned breeding buck conditioned on Pueblo pasture. USDA Scrapie Flock ID tagged.">
+          <picture>
+            <source srcset="/assets/photos/goat_buck_hero.webp" type="image/webp">
+            <img src="/assets/photos/goat_buck_hero.jpg" alt="Mature Boer-Cross Breeding Buck for sale at Baadlands Farms — $450" width="1200" height="900">
+          </picture>
+          <span class="sale-status">Available Now</span>
+          <span class="sale-price-tag">$450</span>
+        </div>
+        <div class="sale-body">
+          <div class="sale-sub">Foundation Breeding Buck &middot; BF-GOAT-BUCK-01</div>
+          <h3>Mature Boer-Cross Herd Sire</h3>
+          <span class="sale-unit">$450 per head &middot; Proven Sire</span>
+          <p>Deep-bodied, heavy-boned breeding buck conditioned on semi-arid Pueblo pasture and scrub oak browse. Ready to add muscle, hardiness and parasite resilience to your herd.</p>
+          <ul class="sale-specs">
+            <li>Proven fertility &amp; strong dry-range hooves</li>
+            <li>Boer / Spanish brush-cross frame</li>
+            <li>USDA Scrapie Flock ID ear tag + Colorado Bill of Sale</li>
+          </ul>
+          <div class="sale-actions">
+            <a class="btn btn-primary" href="mailto:hello@baadlandsfarms.com?subject=Reserve%20Animal%3A%20Mature%20Boer-Cross%20Herd%20Sire%20(%24450)&body=Hi%20Stacey%2C%0D%0A%0D%0AI%20would%20like%20to%20purchase%2Fvisit%20the%20Mature%20Boer-Cross%20Herd%20Sire%20listed%20at%20%24450%20(ID%3A%20BF-GOAT-BUCK-01).%0D%0A%0D%0AName%3A%0D%0APhone%3A%0D%0ACity%2FAcreage%3A%0D%0APreferred%20pickup%20or%20delivery%20date%3A%0D%0A">Reserve / Buy ($450)</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="sale-card" data-sale-cat="goats">
+        <div class="sale-media" data-img="/assets/photos/goat_doe_resting.jpg" data-title="Pasture-Raised Breeding Does — $325 to $400" data-desc="Foundation Boer, Kiko and Spanish-cross breeding does (open or bred). USDA Scrapie Flock ID tagged.">
+          <picture>
+            <source srcset="/assets/photos/goat_doe_resting.webp" type="image/webp">
+            <img src="/assets/photos/goat_doe_resting.jpg" alt="Pasture-raised breeding doe for sale at Baadlands Farms — $325 to $400" width="1200" height="900">
+          </picture>
+          <span class="sale-status">Available Now</span>
+          <span class="sale-price-tag">$325 – $400</span>
+        </div>
+        <div class="sale-body">
+          <div class="sale-sub">Breeding &amp; Brush Does &middot; BF-GOAT-DOE-01</div>
+          <h3>Pasture-Raised Breeding Does (Open or Bred)</h3>
+          <span class="sale-unit">$325 open &middot; $400 bred doe</span>
+          <p>Calm, attentive foundation mothers raised on 100% open Southern Colorado forage with zero growth hormones. Ideal for homestead milk/meat production or brush clearing.</p>
+          <ul class="sale-specs">
+            <li>High-twinning maternal lines with strong milk bags</li>
+            <li>Easy to handle in paddocks, trailers &amp; solar netting</li>
+            <li>USDA Scrapie Flock ID ear tag + hoof &amp; mineral log</li>
+          </ul>
+          <div class="sale-actions">
+            <a class="btn btn-primary" href="mailto:hello@baadlandsfarms.com?subject=Reserve%20Animal%3A%20Pasture-Raised%20Breeding%20Doe%20(%24325-%24400)&body=Hi%20Stacey%2C%0D%0A%0D%0AI%20am%20interested%20in%20purchasing%20Pasture-Raised%20Breeding%20Does%20(%24325%20open%20%2F%20%24400%20bred%2C%20ID%3A%20BF-GOAT-DOE-01).%0D%0A%0D%0AHow%20many%20head%3A%0D%0AOpen%20or%20Bred%3A%0D%0AName%20%26%20Phone%3A%0D%0ACity%3A%0D%0A">Reserve / Buy ($325–$400)</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="sale-card" data-sale-cat="goats">
+        <div class="sale-media" data-img="/assets/photos/goat_kids_duo.jpg" data-title="Bottle-Fed Goat Kids, Doelings &amp; Wethers — $225 to $275" data-desc="Hand-socialized goat kids raised at Baadlands Farms — ready for 4-H/FFA projects, pets, or future breeders.">
+          <picture>
+            <source srcset="/assets/photos/goat_kids_duo.webp" type="image/webp">
+            <img src="/assets/photos/goat_kids_duo.jpg" alt="Bottle-fed baby goat kids and wethers for sale at Baadlands Farms — $225 to $275" width="1200" height="900">
+          </picture>
+          <span class="sale-status">Available Now</span>
+          <span class="sale-price-tag">$225 – $275</span>
+        </div>
+        <div class="sale-body">
+          <div class="sale-sub">Kids, Doelings &amp; 4-H Wethers &middot; BF-GOAT-KID-01</div>
+          <h3>Bottle-Fed Goat Kids, Doelings &amp; Wethers</h3>
+          <span class="sale-unit">$225 wether &middot; $275 doeling</span>
+          <p>Hand-socialized from birth so they come running when called. Great for 4-H/FFA county fair projects, small-acreage weed control, family companions, or growing out your herd.</p>
+          <ul class="sale-specs">
+            <li>Handled daily by family — gentle around children</li>
+            <li>Wethered pet/brush options or intact registered/grade doelings</li>
+            <li>Includes youth 4-H/FFA feeding &amp; care sheet</li>
+          </ul>
+          <div class="sale-actions">
+            <a class="btn btn-primary" href="mailto:hello@baadlandsfarms.com?subject=Reserve%20Animal%3A%20Bottle-Fed%20Goat%20Kids%20(%24225-%24275)&body=Hi%20Stacey%2C%0D%0A%0D%0AI%20am%20interested%20in%20Bottle-Fed%20Goat%20Kids%20%2F%20Wethers%20(%24225-%24275%2C%20ID%3A%20BF-GOAT-KID-01).%0D%0A%0D%0ANumber%20of%20kids%3A%0D%0AWethers%20or%20Doelings%3A%0D%0AName%20%26%20Phone%3A%0D%0A">Reserve / Buy ($225–$275)</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="sale-card" data-sale-cat="goats">
+        <div class="sale-media" data-img="/assets/photos/goat_herd_variety.jpg" data-title="3-Head Homestead Starter Trio — $900" data-desc="Turnkey bonded trio (2 breeding does + 1 unrelated buck or companion wether) ready for your pasture.">
+          <picture>
+            <source srcset="/assets/photos/goat_herd_variety.webp" type="image/webp">
+            <img src="/assets/photos/goat_herd_variety.jpg" alt="3-Head Homestead Starter Goat Trio for sale at Baadlands Farms — $900" width="1200" height="900">
+          </picture>
+          <span class="sale-status" style="background:#b45309">Best Value Bundle</span>
+          <span class="sale-price-tag">$900</span>
+        </div>
+        <div class="sale-body">
+          <div class="sale-sub">Turnkey Starter Herd &middot; BF-GOAT-STARTER-03</div>
+          <h3>3-Head Homestead Starter Trio</h3>
+          <span class="sale-unit">$900 package (2 Does + 1 Buck or Wether — saves $125+)</span>
+          <p>Goats are herd animals that stress when kept alone. Start right with a bonded 3-head trio hand-picked by Stacey for compatible temperament and genetic diversity.</p>
+          <ul class="sale-specs">
+            <li>2 proven pasture does + 1 unrelated breeding sire (or wether)</li>
+            <li>Zero lone-goat vocalizing or fence-testing on move-in day</li>
+            <li>Includes 30-day Pueblo feeding, mineral &amp; fencing transition guide</li>
+          </ul>
+          <div class="sale-actions">
+            <a class="btn btn-primary" href="mailto:hello@baadlandsfarms.com?subject=Reserve%20Animal%3A%203-Head%20Homestead%20Starter%20Trio%20(%24900)&body=Hi%20Stacey%2C%0D%0A%0D%0AI%20want%20to%20reserve%20the%203-Head%20Homestead%20Starter%20Trio%20(%24900%2C%20ID%3A%20BF-GOAT-STARTER-03).%0D%0A%0D%0APreference%20(2%20Does%20%2B%201%20Buck%20OR%202%20Does%20%2B%201%20Wether)%3A%0D%0AName%20%26%20Phone%3A%0D%0ADelivery%20or%20Pueblo%20pickup%3A%0D%0A">Reserve Trio ($900)</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="sale-card" data-sale-cat="goats">
+        <div class="sale-media" data-img="/assets/photos/goat_spotted_sky.jpg" data-title="Painted &amp; Dappled Boer-Cross Goats — $375" data-desc="Flashy spotted and dappled range goats bred for loud color and tough Southern Colorado browse performance.">
+          <picture>
+            <source srcset="/assets/photos/goat_spotted_sky.webp" type="image/webp">
+            <img src="/assets/photos/goat_spotted_sky.jpg" alt="Painted and spotted Boer-cross goat for sale at Baadlands Farms — $375" width="1200" height="900">
+          </picture>
+          <span class="sale-status">Limited Stock</span>
+          <span class="sale-price-tag">$375</span>
+        </div>
+        <div class="sale-body">
+          <div class="sale-sub">Specialty Color Stock &middot; BF-GOAT-SPOTTED-01</div>
+          <h3>Painted &amp; Dappled Boer-Cross Yearlings</h3>
+          <span class="sale-unit">$375 per head &middot; Loud Color Genetics</span>
+          <p>Eye-catching spotted, painted and dappled yearlings that add loud color to your pasture while thriving on Russian thistle, scrub oak and dry rocky ground.</p>
+          <ul class="sale-specs">
+            <li>Flashy coat patterns with full meat &amp; brush frame</li>
+            <li>Range-hardened year-round in Pueblo sun &amp; wind</li>
+            <li>USDA Scrapie Flock ID tagged + Bill of Sale</li>
+          </ul>
+          <div class="sale-actions">
+            <a class="btn btn-primary" href="mailto:hello@baadlandsfarms.com?subject=Reserve%20Animal%3A%20Painted%20%26%20Dappled%20Goat%20(%24375)&body=Hi%20Stacey%2C%0D%0A%0D%0AI%20am%20interested%20in%20the%20Painted%20%26%20Dappled%20Boer-Cross%20Yearlings%20(%24375%2C%20ID%3A%20BF-GOAT-SPOTTED-01).%0D%0A%0D%0AName%20%26%20Phone%3A%0D%0A">Reserve / Buy ($375)</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="sale-card" data-sale-cat="pigs">
+        <div class="sale-media" data-img="/assets/photos/spotted_piglet_held.jpg" data-title="Heritage Feeder Piglets — $150" data-desc="Outdoor-born spotted heritage feeder piglets weaned and ready for your homestead or 4-H project.">
+          <picture>
+            <source srcset="/assets/photos/spotted_piglet_held.webp" type="image/webp">
+            <img src="/assets/photos/spotted_piglet_held.jpg" alt="Spotted heritage feeder piglet for sale at Baadlands Farms — $150" width="1200" height="900">
+          </picture>
+          <span class="sale-status">Available / Reserve</span>
+          <span class="sale-price-tag">$150</span>
+        </div>
+        <div class="sale-body">
+          <div class="sale-sub">Feeder Piglets &amp; Gilts &middot; BF-PIG-FEEDER-01</div>
+          <h3>Pasture-Raised Heritage Feeder Piglets</h3>
+          <span class="sale-unit">$150 per piglet &middot; $275 per pair</span>
+          <p>Outdoor-born spotted heritage piglets raised in Pueblo sunshine, never in confinement crates. Calm, thrifty growers for family pork, garden-bed tilling or 4-H swine projects.</p>
+          <ul class="sale-specs">
+            <li>Weaned on grain, alfalfa &amp; farm produce</li>
+            <li>Pair discount ($275 for 2 piglets)</li>
+            <li>Socialized early for easy loading &amp; handling</li>
+          </ul>
+          <div class="sale-actions">
+            <a class="btn btn-primary" href="mailto:hello@baadlandsfarms.com?subject=Reserve%20Animal%3A%20Heritage%20Feeder%20Piglets%20(%24150)&body=Hi%20Stacey%2C%0D%0A%0D%0AI%20would%20like%20to%20reserve%20Heritage%20Feeder%20Piglets%20(%24150%20each%20%2F%20%24275%20pair%2C%20ID%3A%20BF-PIG-FEEDER-01).%0D%0A%0D%0ANumber%20of%20piglets%3A%0D%0AName%20%26%20Phone%3A%0D%0A">Reserve Piglets ($150)</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="sale-card" data-sale-cat="pigs">
+        <div class="sale-media" data-img="/assets/photos/pasture_pigs_pair.jpg" data-title="Live Market Hogs &amp; Breeding Stock — $450" data-desc="Pasture-finished hogs sold live on the hoof with a Colorado Bill of Sale or coordinated custom butcher drop-off.">
+          <picture>
+            <source srcset="/assets/photos/pasture_pigs_pair.webp" type="image/webp">
+            <img src="/assets/photos/pasture_pigs_pair.jpg" alt="Pasture-raised market hogs for sale at Baadlands Farms — $450" width="1200" height="900">
+          </picture>
+          <span class="sale-status">Reserve Now</span>
+          <span class="sale-price-tag">$450</span>
+        </div>
+        <div class="sale-body">
+          <div class="sale-sub">Live Hogs &amp; Breeders &middot; BF-PIG-HOG-02</div>
+          <h3>Live Pasture Hogs &amp; Breeding Stock</h3>
+          <span class="sale-unit">$450 live on-hoof (or $4.50–$6.00/lb HW share)</span>
+          <p>Buy a live pasture hog on the hoof for home harvest, breeding, or direct delivery to a CDA-licensed Custom Exempt butcher cut to your family’s cut sheet.</p>
+          <ul class="sale-specs">
+            <li>Raised outdoors with deep marbling &amp; clean diet</li>
+            <li>Signed Colorado Bill of Sale prior to pickup/slaughter</li>
+            <li>Optional butcher transport within the Pueblo corridor</li>
+          </ul>
+          <div class="sale-actions">
+            <a class="btn btn-primary" href="mailto:hello@baadlandsfarms.com?subject=Reserve%20Animal%3A%20Live%20Pasture%20Hog%20(%24450)&body=Hi%20Stacey%2C%0D%0A%0D%0AI%20am%20interested%20in%20a%20Live%20Pasture%20Hog%20(%24450%2C%20ID%3A%20BF-PIG-HOG-02).%0D%0A%0D%0ALive%20pickup%20or%20Custom%20Butcher%20Share%3A%0D%0AName%20%26%20Phone%3A%0D%0A">Reserve Hog ($450)</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="sale-card" data-sale-cat="poultry">
+        <div class="sale-media" data-img="/assets/photos/pasture_hen.jpg" data-title="Laying Hens ($35) &amp; Heritage Roosters ($25)" data-desc="Free-range point-of-lay pullets, laying hens, and flock-guardian roosters raised in Southern Colorado.">
+          <picture>
+            <source srcset="/assets/photos/pasture_hen.webp" type="image/webp">
+            <img src="/assets/photos/pasture_hen.jpg" alt="Pasture laying hens and roosters for sale at Baadlands Farms — $25 to $35" width="1200" height="900">
+          </picture>
+          <span class="sale-status">Available Now</span>
+          <span class="sale-price-tag">$25 – $35</span>
+        </div>
+        <div class="sale-body">
+          <div class="sale-sub">Chickens &amp; Roosters &middot; BF-POULTRY-LAYERS-01</div>
+          <h3>Laying Hens, Pullets &amp; Prized Roosters</h3>
+          <span class="sale-unit">$35 laying hen / pullet &middot; $25 heritage rooster</span>
+          <p>Skip the brooder box and bring home outdoor-hardened hens laying blue, olive, speckled and dark brown eggs, plus alert heritage roosters to guard your flock.</p>
+          <ul class="sale-specs">
+            <li>Acclimated to Colorado sun, wind &amp; winter nights</li>
+            <li>Roosters carry full hackle &amp; saddle plumage ($25)</li>
+            <li>Discounted flock bundles (5 hens + 1 rooster for $180)</li>
+          </ul>
+          <div class="sale-actions">
+            <a class="btn btn-primary" href="mailto:hello@baadlandsfarms.com?subject=Reserve%20Birds%3A%20Laying%20Hens%20(%2435)%20%2F%20Roosters%20(%2425)&body=Hi%20Stacey%2C%0D%0A%0D%0AI%20would%20like%20to%20buy%20Laying%20Hens%20(%2435)%20and%2For%20Roosters%20(%2425)%20(ID%3A%20BF-POULTRY-LAYERS-01).%0D%0A%0D%0ANumber%20of%20Hens%3A%0D%0ANumber%20of%20Roosters%3A%0D%0AName%20%26%20Phone%3A%0D%0A">Buy Birds ($25–$35)</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="sale-card" data-sale-cat="poultry">
+        <div class="sale-media" data-img="/assets/photos/heritage_turkeys_ducks.jpg" data-title="Ducks ($30), Guineas ($30), Geese ($55) &amp; Turkeys ($65)" data-desc="Working waterfowl, tick-clearing guinea fowl, and heritage turkeys raised on open Pueblo ground.">
+          <picture>
+            <source srcset="/assets/photos/heritage_turkeys_ducks.webp" type="image/webp">
+            <img src="/assets/photos/heritage_turkeys_ducks.jpg" alt="Ducks, geese, turkeys and guinea fowl for sale at Baadlands Farms — $30 to $65" width="1200" height="900">
+          </picture>
+          <span class="sale-status">Available Now</span>
+          <span class="sale-price-tag">$30 – $65</span>
+        </div>
+        <div class="sale-body">
+          <div class="sale-sub">Waterfowl, Turkeys &amp; Guineas &middot; BF-POULTRY-WATERFOWL-01</div>
+          <h3>Ducks, Geese, Heritage Turkeys &amp; Guineas</h3>
+          <span class="sale-unit">$30 Ducks/Guineas &middot; $55 Geese &middot; $65 Turkeys</span>
+          <p>Hardworking barnyard birds raised alongside goats and livestock dogs. Put guinea fowl and Muscovy/Pekin ducks on tick and grasshopper patrol, or add geese and heritage turkeys.</p>
+          <ul class="sale-specs">
+            <li>Muscovy &amp; Pekin ducks ($30) — rich baking eggs &amp; slug control</li>
+            <li>Tick-eating guinea fowl ($30) &amp; guardian geese ($55)</li>
+            <li>Live heritage bronze &amp; black turkeys ($65 live / $95–$160 holiday)</li>
+          </ul>
+          <div class="sale-actions">
+            <a class="btn btn-primary" href="mailto:hello@baadlandsfarms.com?subject=Reserve%20Birds%3A%20Ducks%2C%20Geese%2C%20Turkeys%20or%20Guineas&body=Hi%20Stacey%2C%0D%0A%0D%0AI%20would%20like%20to%20purchase%20waterfowl%20or%20turkeys%20(ID%3A%20BF-POULTRY-WATERFOWL-01)%3A%0D%0A-%20Ducks%20(%2430)%3A%0D%0A-%20Guineas%20(%2430)%3A%0D%0A-%20Geese%20(%2455)%3A%0D%0A-%20Turkeys%20(%2465)%3A%0D%0A%0D%0AName%20%26%20Phone%3A%0D%0A">Buy Waterfowl / Turkeys</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="sale-card" data-sale-cat="pigs">
+        <div class="sale-media" data-img="/assets/photos/farm_rabbit_portrait.jpg" data-title="Gentle Homestead Rabbits — $40 ($100 Trio)" data-desc="Calm, daily-handled homestead rabbits for 4-H youth projects, garden fertilizer, or breeding trios.">
+          <picture>
+            <source srcset="/assets/photos/farm_rabbit_portrait.webp" type="image/webp">
+            <img src="/assets/photos/farm_rabbit_portrait.jpg" alt="Homestead rabbit for sale at Baadlands Farms — $40" width="1200" height="900">
+          </picture>
+          <span class="sale-status">Available Now</span>
+          <span class="sale-price-tag">$40</span>
+        </div>
+        <div class="sale-body">
+          <div class="sale-sub">Small Homestead Stock &middot; BF-SMALL-RABBIT-01</div>
+          <h3>Gentle Homestead Rabbits &amp; Breeding Trios</h3>
+          <span class="sale-unit">$40 per rabbit &middot; $100 per breeding trio (2 does + 1 buck)</span>
+          <p>Soft-coated, docile rabbits raised in clean, shaded hutches and handled daily. Ideal for 4-H showmanship, cold garden-manure composting, or sustainable homestead trios.</p>
+          <ul class="sale-specs">
+            <li>Calm temperament — great for youth &amp; first-time keepers</li>
+            <li>Breeding trio bundle: 2 does + 1 buck for $100</li>
+            <li>Healthy teeth, ears &amp; coat inspected at pickup</li>
+          </ul>
+          <div class="sale-actions">
+            <a class="btn btn-primary" href="mailto:hello@baadlandsfarms.com?subject=Reserve%20Animal%3A%20Homestead%20Rabbits%20(%2440%20%2F%20%24100%20Trio)&body=Hi%20Stacey%2C%0D%0A%0D%0AI%20would%20like%20to%20buy%20Homestead%20Rabbits%20(%2440%20each%20%2F%20%24100%20trio%2C%20ID%3A%20BF-SMALL-RABBIT-01).%0D%0A%0D%0AQuantity%3A%0D%0AName%20%26%20Phone%3A%0D%0A">Buy Rabbits ($40)</a>
+          </div>
+        </div>
       </article>
 
     </div>
@@ -826,7 +1225,8 @@ footer{background:var(--primary);color:#e9e4d1;padding:2.6rem 0 2rem;margin-top:
         <p>Targeted goat grazing, custom-exempt meat shares, rainbow eggs and farm events out of Pueblo, Colorado.</p>
       </div>
       <div>
-        <h4>Services</h4>
+        <h4>Services &amp; Livestock</h4>
+        <a href="#animals-for-sale">Live Animals for Sale &amp; Prices</a>
         <a href="#services">Goat Grazing &amp; Fuel Mitigation</a>
         <a href="#services">Meat &amp; Pork Shares</a>
         <a href="#services">Eggs &amp; Poultry</a>
@@ -951,6 +1351,164 @@ footer{background:var(--primary);color:#e9e4d1;padding:2.6rem 0 2rem;margin-top:
   if (lbClose) lbClose.addEventListener('click', closeLb);
   if (lb) lb.addEventListener('click', function(e){ if (e.target === lb) closeLb(); });
   document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeLb(); });
+
+  // Live Animals for Sale category filter + Lightbox + Quick-Post Drawer
+  var saleFilterBtns = document.querySelectorAll('.sale-filter-btn');
+  function bindSaleMediaLightbox(scope){
+    (scope || document).querySelectorAll('.sale-media').forEach(function(media){
+      if (media.getAttribute('data-lb-bound')) return;
+      media.setAttribute('data-lb-bound', '1');
+      media.addEventListener('click', function(){
+        var src = media.getAttribute('data-img');
+        if (!src || !lb) return;
+        lbImg.src = src;
+        lbImg.alt = media.getAttribute('data-title') || 'Baadlands Farms animal for sale';
+        lbTitle.textContent = media.getAttribute('data-title') || '';
+        lbDesc.textContent = media.getAttribute('data-desc') || '';
+        lb.classList.add('open');
+      });
+    });
+  }
+  bindSaleMediaLightbox(document);
+
+  saleFilterBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var f = btn.getAttribute('data-sale-filter');
+      saleFilterBtns.forEach(function(b){ b.classList.remove('active'); b.setAttribute('aria-selected', 'false'); });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+      document.querySelectorAll('.sale-card').forEach(function(card){
+        if (f === 'all' || card.getAttribute('data-sale-cat') === f) {
+          card.removeAttribute('hidden');
+        } else {
+          card.setAttribute('hidden', 'hidden');
+        }
+      });
+    });
+  });
+
+  var togglePostDrawer = document.getElementById('togglePostDrawer');
+  var closePostDrawer = document.getElementById('closePostDrawer');
+  var postAnimalDrawer = document.getElementById('postAnimalDrawer');
+  var postAnimalForm = document.getElementById('postAnimalForm');
+  var paPhotoFile = document.getElementById('paPhotoFile');
+  var paPhotoPreset = document.getElementById('paPhotoPreset');
+  var paSendToFarm = document.getElementById('paSendToFarm');
+  var paStatus = document.getElementById('paStatus');
+  var uploadedDataUrl = '';
+
+  if (togglePostDrawer && postAnimalDrawer) {
+    togglePostDrawer.addEventListener('click', function(){
+      postAnimalDrawer.classList.toggle('open');
+    });
+  }
+  if (closePostDrawer && postAnimalDrawer) {
+    closePostDrawer.addEventListener('click', function(){
+      postAnimalDrawer.classList.remove('open');
+    });
+  }
+  if (paPhotoFile) {
+    paPhotoFile.addEventListener('change', function(e){
+      var file = e.target.files && e.target.files[0];
+      if (!file) { uploadedDataUrl = ''; return; }
+      var reader = new FileReader();
+      reader.onload = function(ev){ uploadedDataUrl = ev.target.result; };
+      reader.readAsDataURL(file);
+    });
+  }
+
+  function renderCustomListings(){
+    try {
+      var saved = JSON.parse(localStorage.getItem('baadlands_custom_animals') || '[]');
+      var grid = document.getElementById('saleGrid');
+      if (!grid || !saved.length) return;
+      saved.forEach(function(item){
+        var art = document.createElement('article');
+        art.className = 'sale-card';
+        art.setAttribute('data-sale-cat', item.cat || 'goats');
+        var mailSubj = encodeURIComponent('Reserve Animal: ' + item.title + ' (' + item.price + ')');
+        var mailBody = encodeURIComponent('Hi Stacey,\n\nI would like to purchase/visit: ' + item.title + ' listed at ' + item.price + ' (' + item.unit + ').\n\nName:\nPhone:\n');
+        art.innerHTML =
+          '<div class="sale-media" data-img="' + item.img + '" data-title="' + item.title + ' — ' + item.price + '" data-desc="' + item.desc + '">' +
+            '<img src="' + item.img + '" alt="' + item.title + '" width="1200" height="900">' +
+            '<span class="sale-status">New Ranch Listing</span>' +
+            '<span class="sale-price-tag">' + item.price + '</span>' +
+          '</div>' +
+          '<div class="sale-body">' +
+            '<div class="sale-sub">Ranch Direct Listing &middot; Posted Today</div>' +
+            '<h3>' + item.title + '</h3>' +
+            '<span class="sale-unit">' + item.price + ' &middot; ' + item.unit + '</span>' +
+            '<p>' + item.desc + '</p>' +
+            '<div class="sale-actions">' +
+              '<a class="btn btn-primary" href="mailto:hello@baadlandsfarms.com?subject=' + mailSubj + '&body=' + mailBody + '">Reserve / Buy (' + item.price + ')</a>' +
+            '</div>' +
+          '</div>';
+        grid.insertBefore(art, grid.firstChild);
+      });
+      bindSaleMediaLightbox(grid);
+    } catch(err){}
+  }
+  renderCustomListings();
+
+  if (postAnimalForm) {
+    postAnimalForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      var item = {
+        cat: document.getElementById('paCategory').value,
+        title: document.getElementById('paTitle').value.trim(),
+        price: document.getElementById('paPrice').value.trim(),
+        unit: document.getElementById('paUnit').value.trim() || 'per head',
+        desc: document.getElementById('paDesc').value.trim(),
+        img: uploadedDataUrl || (paPhotoPreset ? paPhotoPreset.value : '/assets/photos/goat_buck_hero.jpg')
+      };
+      try {
+        var saved = JSON.parse(localStorage.getItem('baadlands_custom_animals') || '[]');
+        saved.push(item);
+        localStorage.setItem('baadlands_custom_animals', JSON.stringify(saved));
+      } catch(err){}
+      var grid = document.getElementById('saleGrid');
+      if (grid) {
+        var art = document.createElement('article');
+        art.className = 'sale-card';
+        art.setAttribute('data-sale-cat', item.cat);
+        var mailSubj = encodeURIComponent('Reserve Animal: ' + item.title + ' (' + item.price + ')');
+        var mailBody = encodeURIComponent('Hi Stacey,\n\nI would like to purchase/visit: ' + item.title + ' listed at ' + item.price + ' (' + item.unit + ').\n\nName:\nPhone:\n');
+        art.innerHTML =
+          '<div class="sale-media" data-img="' + item.img + '" data-title="' + item.title + ' — ' + item.price + '" data-desc="' + item.desc + '">' +
+            '<img src="' + item.img + '" alt="' + item.title + '" width="1200" height="900">' +
+            '<span class="sale-status">New Ranch Listing</span>' +
+            '<span class="sale-price-tag">' + item.price + '</span>' +
+          '</div>' +
+          '<div class="sale-body">' +
+            '<div class="sale-sub">Ranch Direct Listing &middot; Posted Today</div>' +
+            '<h3>' + item.title + '</h3>' +
+            '<span class="sale-unit">' + item.price + ' &middot; ' + item.unit + '</span>' +
+            '<p>' + item.desc + '</p>' +
+            '<div class="sale-actions">' +
+              '<a class="btn btn-primary" href="mailto:hello@baadlandsfarms.com?subject=' + mailSubj + '&body=' + mailBody + '">Reserve / Buy (' + item.price + ')</a>' +
+            '</div>' +
+          '</div>';
+        grid.insertBefore(art, grid.firstChild);
+        bindSaleMediaLightbox(art);
+      }
+      if (paStatus) paStatus.textContent = '✓ Listing added with photo & price!';
+      postAnimalForm.reset();
+      uploadedDataUrl = '';
+    });
+  }
+
+  if (paSendToFarm) {
+    paSendToFarm.addEventListener('click', function(){
+      var title = document.getElementById('paTitle').value.trim() || 'New Animal Listing';
+      var price = document.getElementById('paPrice').value.trim() || 'TBD';
+      var unit = document.getElementById('paUnit').value.trim() || 'per head';
+      var cat = document.getElementById('paCategory').value;
+      var desc = document.getElementById('paDesc').value.trim();
+      var subj = encodeURIComponent('NEW BAADLANDS LISTING: ' + title + ' (' + price + ')');
+      var body = encodeURIComponent('Publish to Baadlands Farms Catalog:\n\nCategory: ' + cat + '\nTitle: ' + title + '\nPrice: ' + price + '\nUnit: ' + unit + '\nDescription: ' + desc + '\n\n(Attach animal photo to this email)');
+      window.location.href = 'mailto:hello@baadlandsfarms.com?subject=' + subj + '&body=' + body;
+    });
+  }
 
   function initMap(){
     if (typeof L === 'undefined') { document.getElementById('map').innerHTML = '<div style="padding:2rem;text-align:center;color:#4a5340">Map unavailable offline. Service area: Pueblo, Pueblo West, Colorado Springs, Monument, Cañon City, Beulah, Rye — 120-mile radius.</div>'; return; }

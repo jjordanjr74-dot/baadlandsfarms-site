@@ -1,9 +1,28 @@
 {
   "$schema": "https://raw.githubusercontent.com/nousresearch/webmcp/main/schema/tools.json",
   "name": "baadlands-farms",
-  "description": "Baadlands Farms \u2014 targeted goat grazing, farm-direct meat shares, eggs, and agritourism in Pueblo, Colorado.",
-  "version": "1.0.0",
+  "description": "Baadlands Farms \u2014 live goats & farm animals for sale, targeted goat grazing, farm-direct meat shares, eggs, and agritourism in Pueblo, Colorado.",
+  "version": "1.1.0",
   "tools": [
+    {
+      "name": "list_animals_for_sale",
+      "description": "Browse live goats (bucks, does, kids, starter herds), pigs, poultry, waterfowl, and rabbits for sale with photos and prices at Baadlands Farms.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string",
+            "enum": [
+              "all",
+              "goats",
+              "pigs",
+              "poultry"
+            ]
+          }
+        }
+      },
+      "endpoint": "/api/livestock.json"
+    },
     {
       "name": "get_grazing_quote",
       "description": "Get an estimated grazing quote based on acreage and vegetation density.",
