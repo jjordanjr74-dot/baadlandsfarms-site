@@ -186,7 +186,10 @@ footer{background:var(--primary);color:#e9e4d1;padding:2.6rem 0 2rem;margin-top:
 .lightbox-bar p{color:#4a5340;font-size:.88rem}
 .lightbox-close{background:var(--primary);color:#fff;border:none;border-radius:6px;padding:.5rem 1rem;font-weight:800;cursor:pointer;font-family:inherit}
 @media(max-width:900px){.hero h1{font-size:2.4rem}.nav-links{display:none}.hero-grid,.about-split{grid-template-columns:1fr}}
-@media(max-width:640px){.hero h1{font-size:1.95rem}.calc-grid{grid-template-columns:1fr}.calc-body{padding:1.5rem}.calc-foot{padding:1.2rem 1.5rem}section{padding:3rem 0}}
+@media(max-width:640px){header,.nav,.container{max-width:100%;min-width:0}.container{padding:0 16px}.nav{height:auto;flex-wrap:wrap;padding:10px 0;gap:8px}.nav-cta{white-space:normal}.hero-grid,.about-split{grid-template-columns:minmax(0,1fr)}.hero-grid>*,.about-split>*{min-width:0}.hero h1,.hero p{overflow-wrap:anywhere}.hero{padding:2.4rem 0}.hero h1{font-size:1.95rem}.calc-grid{grid-template-columns:1fr}.calc-body{padding:1.5rem}.calc-foot{padding:1.2rem 1.5rem}section{padding:3rem 0}}
+/* 44px touch-target floor (WCAG 2.5.5), rendered-DOM fix 2026-11-24 */
+.skip,.card-link,.filter-btn,.sale-filter-btn,.nav-cta,.contact-lines a,footer a{min-height:44px;display:inline-flex;align-items:center}
+.nav-links a{min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center}
 </style>
 </head>
 <body>
