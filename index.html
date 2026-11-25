@@ -187,6 +187,17 @@ footer{background:var(--primary);color:#e9e4d1;padding:2.6rem 0 2rem;margin-top:
 .lightbox-close{background:var(--primary);color:#fff;border:none;border-radius:6px;padding:.5rem 1rem;font-weight:800;cursor:pointer;font-family:inherit}
 @media(max-width:900px){.hero h1{font-size:2.4rem}.nav-links{display:none}.hero-grid,.about-split{grid-template-columns:1fr}}
 @media(max-width:640px){.hero h1{font-size:1.95rem}.calc-grid{grid-template-columns:1fr}.calc-body{padding:1.5rem}.calc-foot{padding:1.2rem 1.5rem}section{padding:3rem 0}}
+/* 44px touch-target floor (WCAG 2.5.5) rendered-DOM 2026-11-25 */
+header a, nav a, footer a, [role=tab], button, select, .chip, .pill, .tag, .skip, .back,
+a[href^="mailto:"], a[href^="tel:"], a[download], a[href$=".apk"],
+[class*="btn"], [class*="cta"], [class*="lang"] a, [class*="lang"] button {
+  min-height: 44px; min-width: 44px; display: inline-flex; align-items: center;
+}
+/* inline text links: expand the hit area without changing line layout */
+a { min-height: 44px; }
+p a, h1 a, h2 a, h3 a, h4 a, h5 a, td a, dd a, strong a, b a, em a, span a, a:has(> strong), a:has(> b), a:has(> em), .footer-sister a, .err-hint a, li a {
+  padding: 15px 4px; margin: -15px -4px;
+}
 </style>
 </head>
 <body>
